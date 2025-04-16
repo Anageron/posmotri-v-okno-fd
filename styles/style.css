@@ -9,13 +9,13 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 h1,
@@ -56,9 +56,9 @@ ol {
 }
 
 .content{
-  display: grid;   
+  display: grid;
+  gap:30px;   
   padding: 133px 30px;
-  gap:30px;
   }
 
 .content > section{
@@ -67,8 +67,8 @@ ol {
 }
 
 .result{
-  padding-top: 78px;
   grid-area: 1/1/2/2;
+  padding-top: 78px;
  
 
 }
@@ -110,10 +110,10 @@ video {
 
 .content__list{
   display: flex;
-  gap: 30px;
   flex-direction:column;
-  padding-bottom: 30px;
+  gap: 30px;
   width: 390px;
+  padding-bottom: 30px;
 }
 
 
@@ -135,16 +135,16 @@ video {
 }
 
 .search-form__fieldset-title{
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
     padding-bottom: 5px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
   } 
 
 .title{
   font-family: 'Oswald', sans-serif;
-  font-size: 75px;
   font-weight: 700;
+  font-size: 75px;
   line-height: 95%;
   text-transform: uppercase;
   
@@ -155,36 +155,36 @@ video {
 }
 
 .content__card-link{
-  text-decoration: none;
   color:white;
+  text-decoration: none;
 }
 
 .content__video-card-title{
+  overflow: hidden;
   font-family: 'Oswald', sans-serif;
-  font-size: 30px;
   font-weight: 700;
+  font-size: 30px;
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
   }
 
 .content__video-card-description{
-  line-height: 16px;
-  -webkit-line-clamp:1;
-    text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
+  line-height: 16px;
+    text-overflow: ellipsis;
+  -webkit-line-clamp:1;
+  white-space: nowrap;
  
   
 }
 
  .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 }  
@@ -206,15 +206,15 @@ video {
 
 .search-form__textfield{
 min-width: 225px;
-background-color: transparent;
-color:rgb(255 255 255 / 70%);
-font-family: 'Fira Sans Condensed', sans-serif;
-font-size: 18px;
 border:none;
 border-top:1px solid white;
 border-bottom:1px solid white;
-appearance: none;
+color:rgb(255 255 255 / 70%);
+font-family: 'Fira Sans Condensed', sans-serif;
+font-size: 18px;
+background-color: transparent;
 cursor: pointer;
+appearance: none;
 }
 
 .search-form__textfield:focus{
@@ -229,21 +229,21 @@ position: relative;
 vertical-align: middle;  */
 width: 19px;
 height: 19px;
-background-color: transparent;
-border: 1px solid white;
 margin-right: 5px;
+border: 1px solid white;
+background-color: transparent;
 cursor: pointer;
 }
 
 .search-form__checkbox:checked +.search-form__pseudo-checkbox::after{
-  display: inline-block;
-  position: absolute;
   content:'';
+  position: absolute; 
+  top:1px;
+  left:1px;
+  display: inline-block;
   width:15px;
   height:15px;
   background-color: white;
-  left:1px; 
-  top:1px;
 }
 
   .search-form__label:has(.search-form__checkbox:focus){
@@ -256,18 +256,18 @@ cursor: pointer;
 }
 
 .button{
-  font-size:15px; 
+  height: 34px;
+  border: 1px solid white; 
   color: #fff;
   font-weight: 700;
+  font-size:15px;
   background-color: transparent;
-  border: 1px solid white;
-  height: 34px;
   cursor: pointer;
 }
 
 .search-form__submit-button{
-  width: 194px;
-  align-self: flex-end;    
+  align-self: flex-end;
+  width: 194px;    
   }
 
 .more-button{  
@@ -282,13 +282,13 @@ cursor: pointer;
 }
 
 .button:active{
-  background-color:#545050;
   text-decoration:none;
+  background-color:#545050;
 }
 
 .button:focus{
 outline: none;
-cursor: pointer
+cursor: pointer;
 }
 
 .button:focus-visible{
